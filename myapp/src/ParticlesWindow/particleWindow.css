@@ -1,0 +1,26 @@
+.particleWindow {
+    background-color: #438cff !important;
+    height: 100%;
+}
+
+.false{
+    background-color: #438cff !important;
+    animation-name: red2blue;
+    animation-duration: 1s;
+}
+
+.true{
+    background-color: red !important;
+    animation-name: blue2red;
+    animation-duration: 1s;
+}
+
+@keyframes red2blue {
+    from{background-color: red;}
+    to{background-color: #438cff;}
+}
+
+@keyframes blue2red {
+    from{background-color: #438cff;}
+    to{background-color: red;}
+}
