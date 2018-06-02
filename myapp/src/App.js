@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
+// import { BrowserRouter as Router} from 'react-router-dom';
 import Riba from './Riba/Riba';
 import ParticlesWindow from './ParticlesWindow/ParticlesWindow';
+import { Route } from 'react-router-dom';
 
 const StyledCenter = styled.div`
   height: 100%;
@@ -29,6 +30,7 @@ class App extends Component {
 
   render() {
     return (
+      <Route exact path={'/riba'} render={routerProps =>
       <StyledDiv>
         <ParticlesWindow
           checkedCgn = {this.state.checkedCgn}
@@ -38,6 +40,7 @@ class App extends Component {
           changeState = {this.changeState}
         />
       </StyledDiv>
+      }/>
     );
   }
 }
