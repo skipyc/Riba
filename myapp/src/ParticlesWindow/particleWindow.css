@@ -10,7 +10,7 @@
 }
 
 .true{
-    background-color: red !important;
+    background-color: #BE2625 !important;
     animation-name: blue2red;
     animation-duration: 1s;
 }

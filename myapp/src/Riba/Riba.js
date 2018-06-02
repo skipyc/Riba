@@ -5,7 +5,6 @@ import circle from '../images/circle.png';
 import styled from 'styled-components';
 import {Paper, Switch} from '@material-ui/core';
 import Baffle from "baffle-react";
-import './par.css';
 
 const StyledPaper = styled(Paper)`
   width: 200px;
