@@ -16,11 +16,11 @@
 }
 
 @keyframes red2blue {
-    from{background-color: red;}
+    from{background-color: #BE2625;}
     to{background-color: #438cff;}
 }
 
 @keyframes blue2red {
     from{background-color: #438cff;}
-    to{background-color: red;}
+    to{background-color: #BE2625;}
 }
