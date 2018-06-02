@@ -2,7 +2,7 @@
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://skipyC.github.io/riba",
+  "homepage": "http://skipyC.github.io/Riba",
   "dependencies": {
     "@material-ui/core": "^1.1.0",
     "baffle-react": "0.0.2",

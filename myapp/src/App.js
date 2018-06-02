@@ -30,7 +30,7 @@ class App extends Component {
 
   render() {
     return (
-      <Route exact path={'/riba'} render={routerProps =>
+      <Route exact path={''} render={routerProps =>
       <StyledDiv>
         <ParticlesWindow
           checkedCgn = {this.state.checkedCgn}
