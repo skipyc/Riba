@@ -24,6 +24,7 @@ class App extends Component {
     checkedCgn: false,
   };
 
+
   changeState = value =>{
     this.setState({checkedCgn: value});
   };
@@ -35,10 +36,12 @@ class App extends Component {
         <ParticlesWindow
           checkedCgn = {this.state.checkedCgn}
         />
-        <Riba 
-          checkedCgn = {this.state.checkedCgn}
-          changeState = {this.changeState}
-        />
+        <StyledCenter>
+          <Riba 
+            checkedCgn = {this.state.checkedCgn}
+            changeState = {this.changeState}
+          />
+        </StyledCenter>
       </StyledDiv>
       }/>
     );

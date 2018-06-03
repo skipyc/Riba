@@ -7,16 +7,13 @@ import {Paper, Switch} from '@material-ui/core';
 import Baffle from "baffle-react";
 
 const StyledPaper = styled(Paper)`
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-  position: relative;
-  bottom: 60%;
-  left: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 200px;
+  width: 200px;
+  padding: 20px;
 `;
 type Props = {
   changeState: (value: any) => void;
@@ -45,6 +42,8 @@ class Riba extends Component {
     return (
           <StyledPaper>
             <h3>Ali je riba cgn?</h3>
+
+            <div style={{height: "20px", width: "150px", display: "flex", justifyContent: "center"}}>
             {checkedCgn && <Baffle
               speed={50}
               characters="1234567890qwertzuiopasdfghjklyxcvbnm!#$%&/()=[]\|€@{},.;:<>"
@@ -57,6 +56,7 @@ class Riba extends Component {
             >
             {!checkedCgn ? "oL8VF4EsYZccwulSpq" : "Da! In to številka 1!"}
             </Baffle>}
+            </div>
             <Switch
               checked={checkedCgn}
               onChange={this.handleChange('checkedCgn')}
