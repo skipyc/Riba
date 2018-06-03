@@ -43,7 +43,7 @@ class Riba extends Component {
           <StyledPaper>
             <h3>Ali je riba cgn?</h3>
 
-            <div style={{height: "20px", width: "150px", display: "flex", justifyContent: "center"}}>
+            <div style={{height: "20px", width: "200px", display: "flex", justifyContent: "center"}}>
             {checkedCgn && <Baffle
               speed={50}
               characters="1234567890qwertzuiopasdfghjklyxcvbnm!#$%&/()=[]\|€@{},.;:<>"
@@ -54,7 +54,7 @@ class Riba extends Component {
               revealDelay={10}
 
             >
-            {!checkedCgn ? "oL8VF4EsYZccwulSpq" : "Da! In to številka 1!"}
+            "Da! In to številka 1!"
             </Baffle>}
             </div>
             <Switch
